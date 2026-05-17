@@ -365,6 +365,44 @@ header.sticky {
 }
 
 /* ==============================
+   TICKER
+   ============================== */
+.ticker-wrap {
+    background: var(--primary);
+    padding: 12px 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.ticker {
+    display: flex;
+    width: max-content;
+}
+
+.ticker-content {
+    display: flex;
+    white-space: nowrap;
+    animation: scroll 25s linear infinite;
+}
+
+.ticker-content span {
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0 15px;
+}
+
+.ticker-content .divider {
+    color: var(--secondary) !important;
+    padding: 0 5px;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* ==============================
    ABOUT
    ============================== */
 .about {

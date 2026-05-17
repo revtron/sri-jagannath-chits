@@ -369,7 +369,7 @@ header.sticky {
    ============================== */
 .marquee {
     background: var(--primary);
-    padding: 14px 0;
+    padding: 12px 0;
     overflow: hidden;
     position: relative;
 }
@@ -379,9 +379,10 @@ header.sticky {
     content: '';
     position: absolute;
     top: 0;
-    width: 100px;
+    width: 80px;
     height: 100%;
     z-index: 2;
+    pointer-events: none;
 }
 
 .marquee::before {
@@ -396,8 +397,8 @@ header.sticky {
 
 .marquee-content {
     display: flex;
-    animation: marquee 20s linear infinite;
     width: max-content;
+    animation: marquee 25s linear infinite;
 }
 
 .marquee-content span {
@@ -405,12 +406,12 @@ header.sticky {
     font-size: 14px;
     font-weight: 500;
     white-space: nowrap;
-    padding: 0 30px;
-    border-right: 2px solid var(--secondary);
+    padding: 0 25px;
+    flex-shrink: 0;
 }
 
-.marquee-content span:last-child {
-    border-right: none;
+.marquee-content span:nth-child(even) {
+    color: var(--secondary);
 }
 
 @keyframes marquee {
@@ -1601,12 +1602,12 @@ footer {
     .cert-display-grid,
     .values-grid { grid-template-columns: 1fr !important; }
     
-    .marquee-content span {
-        font-size: 12px;
-        padding: 0 15px;
+    .marquee-content {
+        animation: marquee 18s linear infinite;
     }
     
-    .marquee-content {
-        animation: marquee 15s linear infinite;
+    .marquee-content span {
+        font-size: 12px;
+        padding: 0 12px;
     }
 }

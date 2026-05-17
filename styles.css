@@ -130,9 +130,9 @@ header {
 }
 
 .logo-img {
-    height: 45px;
+    height: 35px;
     width: auto;
-    border-radius: 8px;
+    border-radius: 6px;
     object-fit: contain;
 }
 
@@ -1203,7 +1203,7 @@ footer {
 }
 
 .footer-logo .logo-img {
-    height: 42px;
+    height: 35px;
     width: auto;
     border-radius: 6px;
     object-fit: contain;

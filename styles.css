@@ -1584,4 +1584,13 @@ footer {
     
     .cert-display-grid,
     .values-grid { grid-template-columns: 1fr !important; }
+    
+    .ticker-content span {
+        font-size: 12px;
+        padding: 0 10px;
+    }
+    
+    .ticker-content {
+        animation: scroll 20s linear infinite;
+    }
 }

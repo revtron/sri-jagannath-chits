@@ -369,54 +369,30 @@ header.sticky {
    ============================== */
 .marquee {
     background: var(--primary);
-    padding: 12px 0;
+    padding: 10px 0;
     overflow: hidden;
-    position: relative;
-}
-
-.marquee::before,
-.marquee::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 80px;
-    height: 100%;
-    z-index: 2;
-    pointer-events: none;
-}
-
-.marquee::before {
-    left: 0;
-    background: linear-gradient(to right, var(--primary), transparent);
-}
-
-.marquee::after {
-    right: 0;
-    background: linear-gradient(to left, var(--primary), transparent);
+    white-space: nowrap;
 }
 
 .marquee-content {
-    display: flex;
-    width: max-content;
-    animation: marquee 25s linear infinite;
+    display: inline-block;
+    animation: marquee 30s linear infinite;
 }
 
 .marquee-content span {
-    color: var(--white);
+    color: #fff;
     font-size: 14px;
     font-weight: 500;
-    white-space: nowrap;
-    padding: 0 25px;
-    flex-shrink: 0;
+    margin: 0 20px;
 }
 
-.marquee-content span:nth-child(even) {
-    color: var(--secondary);
+.marquee-content span:nth-child(odd) {
+    color: #c9a227;
 }
 
 @keyframes marquee {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
 }
 
 /* ==============================
@@ -1603,11 +1579,11 @@ footer {
     .values-grid { grid-template-columns: 1fr !important; }
     
     .marquee-content {
-        animation: marquee 18s linear infinite;
+        animation: marquee 20s linear infinite;
     }
     
     .marquee-content span {
         font-size: 12px;
-        padding: 0 12px;
+        margin: 0 12px;
     }
 }

@@ -250,23 +250,26 @@ header.sticky {
         justify-content: center;
         align-items: center;
         gap: 6px;
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
         cursor: pointer;
         z-index: 1001;
         position: absolute;
         right: 20px;
-        top: 10px;
+        top: 15px;
         background: transparent;
+        border: none;
+        outline: none;
+        padding: 0;
     }
 
     .hamburger span {
         display: block;
-        width: 28px;
-        height: 3px;
+        width: 26px;
+        height: 2px;
         background: var(--primary);
-        border-radius: 3px;
-        transition: all 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+        border-radius: 2px;
+        transition: all 0.3s ease;
     }
     
     header.sticky .hamburger span {
@@ -274,18 +277,15 @@ header.sticky {
     }
 
     .hamburger.active span:nth-child(1) {
-        transform: translateY(9px) rotate(135deg);
-        background: var(--secondary);
+        transform: translateY(8px) rotate(45deg);
     }
 
     .hamburger.active span:nth-child(2) {
         opacity: 0;
-        transform: scale(0);
     }
 
     .hamburger.active span:nth-child(3) {
-        transform: translateY(-9px) rotate(-135deg);
-        background: var(--secondary);
+        transform: translateY(-8px) rotate(-45deg);
     }
 
     .menu-close {

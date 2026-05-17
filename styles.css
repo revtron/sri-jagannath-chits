@@ -113,6 +113,12 @@ header {
     z-index: 1000;
     background: var(--white);
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+header.sticky {
+    background: var(--primary);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 .navbar {
@@ -241,35 +247,45 @@ header {
     .hamburger {
         display: flex;
         flex-direction: column;
-        gap: 5px;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        width: 40px;
+        height: 40px;
         cursor: pointer;
-        padding: 8px;
         z-index: 1001;
         position: absolute;
         right: 20px;
-        top: 15px;
-        background: var(--white);
-        border-radius: 5px;
+        top: 10px;
+        background: transparent;
     }
 
     .hamburger span {
-        width: 22px;
-        height: 2.5px;
+        display: block;
+        width: 28px;
+        height: 3px;
         background: var(--primary);
-        border-radius: 2px;
-        transition: all 0.3s ease;
+        border-radius: 3px;
+        transition: all 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    }
+    
+    header.sticky .hamburger span {
+        background: var(--white);
     }
 
     .hamburger.active span:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
+        transform: translateY(9px) rotate(135deg);
+        background: var(--secondary);
     }
 
     .hamburger.active span:nth-child(2) {
         opacity: 0;
+        transform: scale(0);
     }
 
     .hamburger.active span:nth-child(3) {
-        transform: rotate(-45deg) translate(5px, -5px);
+        transform: translateY(-9px) rotate(-135deg);
+        background: var(--secondary);
     }
 
     .menu-close {

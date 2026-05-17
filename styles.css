@@ -125,7 +125,15 @@ header {
 .logo {
     display: flex;
     align-items: center;
+    gap: 10px;
     text-decoration: none;
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
+    border-radius: 4px;
+    object-fit: contain;
 }
 
 .logo-text {
@@ -222,6 +230,14 @@ header {
 }
 
 @media (max-width: 768px) {
+    .logo-img {
+        height: 32px !important;
+    }
+    
+    .logo .company-name {
+        font-size: 14px;
+    }
+    
     .hamburger {
         display: flex;
         flex-direction: column;
@@ -1189,8 +1205,16 @@ footer {
 .footer-logo {
     display: flex;
     align-items: center;
+    gap: 10px;
     text-decoration: none;
     margin-bottom: 18px;
+}
+
+.footer-logo .logo-img {
+    height: 40px;
+    width: auto;
+    border-radius: 4px;
+    object-fit: contain;
 }
 
 .footer-logo .company-name {

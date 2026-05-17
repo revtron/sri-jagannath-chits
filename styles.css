@@ -2,9 +2,9 @@
     --primary: #1a365d;
     --primary-dark: #0f2440;
     --primary-light: #2c5282;
-    --secondary: #0d9488;
-    --secondary-light: #14b8a6;
-    --accent: #5eead4;
+    --secondary: #c9a227;
+    --secondary-light: #d4b84a;
+    --accent: #e8b923;
     --text-dark: #1a202c;
     --text-light: #4a5568;
     --text-lighter: #718096;
@@ -12,7 +12,7 @@
     --off-white: #f8fafc;
     --light-gray: #edf2f7;
     --gradient: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
-    --gradient-secondary: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+    --gradient-secondary: linear-gradient(135deg, #c9a227 0%, #d4b84a 100%);
 }
 
 * {
@@ -139,7 +139,7 @@ header {
     justify-content: center;
     font-size: 16px;
     font-weight: 800;
-    color: var(--white);
+    color: var(--primary-dark);
 }
 
 .logo-text {
@@ -1546,6 +1546,14 @@ footer {
     .contact-icon { margin: 0 auto; }
     .contact-form-box { padding: 22px; }
     .form-row { grid-template-columns: 1fr !important; }
+    .social-links {
+        justify-content: center;
+        margin-top: 15px;
+    }
+    .social-links a {
+        width: 45px;
+        height: 45px;
+    }
     
     /* Footer */
     .footer-grid { 

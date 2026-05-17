@@ -125,22 +125,7 @@ header {
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
     text-decoration: none;
-}
-
-.logo-icon {
-    width: 45px;
-    height: 45px;
-    background: var(--gradient-secondary);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    font-weight: 800;
-    color: var(--primary-dark);
-    flex-shrink: 0;
 }
 
 .logo-text {
@@ -1204,30 +1189,13 @@ footer {
 .footer-logo {
     display: flex;
     align-items: center;
-    gap: 10px;
     text-decoration: none;
     margin-bottom: 18px;
 }
 
-.footer-logo .logo-icon {
-    width: 45px;
-    height: 45px;
-    background: var(--gradient-secondary);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    font-weight: 800;
-    color: var(--primary-dark);
-    flex-shrink: 0;
-}
-
-.footer-logo .logo-text {
-    color: var(--white);
-}
-
 .footer-logo .company-name {
+    font-size: 18px;
+    font-weight: 700;
     color: var(--white);
 }
 

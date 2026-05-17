@@ -377,8 +377,9 @@ header.sticky {
 
 .ticker {
     display: flex;
-    animation: ticker 30s linear infinite;
+    animation: ticker 20s linear infinite;
     white-space: nowrap;
+    width: max-content;
 }
 
 .ticker span {

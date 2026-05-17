@@ -1446,19 +1446,40 @@ footer {
     
     /* Certificates */
     .cert-display-grid {
-        grid-template-columns: repeat(2, 1fr) !important;
-        gap: 12px;
+        grid-template-columns: 1fr !important;
+        gap: 15px;
     }
-    .cert-display-card { padding: 18px 12px; }
+    .cert-display-card { 
+        padding: 20px 15px; 
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        text-align: left;
+    }
     .cert-image {
-        width: 45px;
-        height: 45px;
+        width: 50px;
+        height: 50px;
+        flex-shrink: 0;
+        margin-bottom: 0;
     }
-    .cert-image i { font-size: 18px; }
-    .cert-info h4 { font-size: 12px; }
-    .cert-info p { font-size: 11px; }
-    .cert-badges { flex-direction: column; align-items: center; gap: 10px; }
-    .badge-item { width: 100%; max-width: 200px; justify-content: center; }
+    .cert-image i { font-size: 20px; }
+    .cert-info { flex: 1; }
+    .cert-info h4 { font-size: 14px; }
+    .cert-info p { font-size: 12px; }
+    .cert-link { font-size: 12px; }
+    .cert-badges { 
+        display: flex; 
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 10px; 
+    }
+    .badge-item { 
+        flex: 0 0 auto; 
+        width: auto; 
+        max-width: none;
+        justify-content: center; 
+    }
     .cert-notice {
         flex-direction: column;
         text-align: center;

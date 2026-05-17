@@ -366,6 +366,38 @@ header.sticky {
 }
 
 /* ==============================
+   TICKER
+   ============================== */
+.ticker-wrap {
+    background: var(--primary);
+    padding: 12px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.ticker {
+    display: flex;
+    animation: ticker 30s linear infinite;
+    white-space: nowrap;
+}
+
+.ticker span {
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0 20px;
+}
+
+.ticker span:nth-child(odd) {
+    color: var(--secondary);
+}
+
+@keyframes ticker {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* ==============================
    ABOUT
    ============================== */
 .about {

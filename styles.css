@@ -480,27 +480,35 @@ header.sticky {
     font-size: 15px;
 }
 
-.about-image {
+.about-images {
     margin-top: 25px;
-    border-radius: 18px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(26, 54, 93, 0.15);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
 }
 
-.about-image img {
+.about-images img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(26, 54, 93, 0.12);
     transition: transform 0.4s ease;
 }
 
-.about-image:hover img {
+.about-images img:hover {
     transform: scale(1.03);
 }
 
 @media (max-width: 768px) {
-    .about-image {
+    .about-images {
+        grid-template-columns: 1fr;
+        gap: 12px;
         margin-top: 20px;
+    }
+    
+    .about-images img {
+        height: 180px;
         border-radius: 12px;
     }
     

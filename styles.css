@@ -364,6 +364,46 @@ header.sticky {
     color: rgba(255, 255, 255, 0.7);
 }
 
+.hero-image {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .hero-image {
+        display: block;
+        margin-top: 30px;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+        border: 3px solid var(--secondary);
+    }
+    
+    .hero-image img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-image {
+        display: block;
+        margin: 30px auto 0;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        border: 2px solid var(--secondary);
+        max-width: 300px;
+    }
+    
+    .hero-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
 /* ==============================
    MARQUEE
    ============================== */
